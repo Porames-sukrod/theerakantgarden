@@ -1,0 +1,639 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  /* Removed margin-right: 100px; */
+  margin-left: 20px; /* Added some left margin for spacing */
+}
+
+
+
+/* ปรับสไตล์ปุ่ม (ถ้าต้องการ) */
+.banner-text .btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+}
+
+.header-product {
+  display: flex;
+  align-items: center; /* จัดให้ข้อความและปุ่มอยู่ในแนวเดียวกัน */
+}
+
+.text-product {
+  margin: 20px 0px 20px 0px;
+  margin-right: auto; /* ผลักปุ่มไปทางขวา */
+}
+
+.header-product button {
+  background-color: #007bff; /* สีพื้นหลัง */
+  color: white; /* สีตัวอักษร */
+  border: none; /* ลบขอบ */
+  padding: 10px 20px; /* ระยะห่างภายในปุ่ม */
+  border-radius: 5px; /* ทำให้ขอบมน */
+  cursor: pointer; /* เปลี่ยน pointer เมื่อ hover */
+  transition: background-color 0.3s ease; /* เพิ่ม transition เมื่อ hover */
+}
+
+.header-product button:hover {
+  background-color: #0056b3; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+}
+
+.header-product button a {
+  color: inherit; /* สีตัวอักษรเหมือนกับปุ่ม */
+  text-decoration: none; /* ลบเส้นใต้ */
+}
+
+.menu {
+  display: flex;
+  justify-content: center; /* จัดให้เมนูอยู่กึ่งกลาง */
+  padding: 20px 0;
+  background-color: #ffffff; /* สีพื้นหลังอ่อน */
+}
+
+.menu-ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px; /* ระยะห่างระหว่างเมนู */
+}
+
+.menu-ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.menu-ul li a:hover {
+  background-color: #007bff;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-img-top {
+  max-height: 225px; /* หรือความสูงที่คุณต้องการ */
+  object-fit: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ */
+}
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+transition: 0.3s; /* เพิ่ม transition เพื่อให้ดู smooth */
+border-radius: 5px; /* ทำให้ขอบมน */
+margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* เพิ่มเงาเมื่อ hover */
+}
+
+.product-grid {
+margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+}
+
+.footer {
+  background: #ffffff;
+  color: #000000;
+  padding: 40px 20px;
+  font-family: 'Sarabun', sans-serif;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.green {
+  color: #73cf11;
+}
+
+.contact-list,
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li,
+.menu-list li {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.menu-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-list a:hover {
+  text-decoration: underline;
+}
+
+.qr-code {
+  width: 150px;
+  height: auto;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #000000;
+  margin-right: 15px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #73cf11;
+}
+
+.custom-footer {
+  background-color: #f8f8f8; /* Light grey background */
+  padding: 20px 0;
+  font-family: sans-serif; /* Simple font */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-logo img{
+  width: 200px;
+}
+
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 15px;
+  margin: 5px 10px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.footer-copyright,
+.footer-contact {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  color: #666;
+  border-radius: 50%;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 0.8em; /* Adjust icon size */
+}
+
+.social-icon:hover {
+  background-color: #ddd;
+}
+
+
+/* ---  Responsive Design  ---  */
+
+@media (max-width: 768px) {
+  .footer-nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-copyright,
+  .footer-contact {
+      margin-bottom: 10px;
+  }
+}
+
+.about-us-section {
+display: flex;
+align-items: center;
+padding: 20px;
+border: 1px solid #dee2e6;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+
+.about-us-left {
+padding-right: 20px;
+}
+
+.about-us-left h2 {
+margin-bottom: 20px;
+font-size: 1.75rem;
+}
+
+.about-us-info {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.about-us-info i {
+margin-right: 10px;
+color: #007bff;
+width: 20px;
+text-align: center;
+}
+
+.about-us-info span {
+font-size: 1rem;
+}
+
+.about-us-contact {
+display: flex;
+gap: 10px;
+margin-top: 20px;
+margin-bottom: 20px; /* เพิ่ม margin-bottom สำหรับมือถือ */
+}
+
+.about-us-contact a {
+padding: 10px 20px;
+border-radius: 5px;
+color: white;
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.about-us-contact a i {
+color: white;
+}
+
+.about-us-right {
+padding-left: 20px;
+}
+
+.about-us-right iframe {
+height: 100%;
+}
+
+/* Media Query สำหรับหน้าจอมือถือ */
+@media (max-width: 767px) {
+.about-us-section {
+    flex-direction: column; /* เปลี่ยนเป็นเรียงแนวตั้ง */
+    align-items: stretch; /* ยืดเนื้อหาตามความกว้าง */
+}
+
+.about-us-left {
+    padding-right: 0; /* ลบ padding ขวา */
+    padding-bottom: 20px; /* เพิ่ม padding ล่าง */
+}
+
+.about-us-right {
+    padding-left: 0; /* ลบ padding ซ้าย */
+    padding-top: 20px; /* เพิ่ม padding บน */
+}
+
+.about-us-contact {
+    justify-content: center; /* จัดปุ่มให้อยู่ตรงกลาง */
+    margin-bottom: 30px; /* เพิ่ม margin-bottom ให้มากขึ้น */
+}
+
+.about-us-right iframe {
+    width: 100%; /* ให้ iframe เต็มความกว้าง */
+}
+}
+
+.image-container {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%; /* หรือขนาดที่คุณต้องการ */
+height: auto; /* หรือขนาดที่คุณต้องการ */
+}
+
+.image-container img {
+max-width: 100%;
+height: auto;
+}
+
+
+
+/* Media Query สำหรับหน้าจอมือถือ */
+@media (max-width: 767px) {
+.div-img img {
+  max-width: 100%;       /* Ensure image doesn't overflow */
+  height: auto;
+}
+
+.div-img {
+  display: flex;
+  justify-content: center; /* จัดกึ่งกลางแนวนอน */
+  align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+  width: 100%; /* ให้ครอบคลุมความกว้างของ column */
+  height: auto;
+}
+
+.div-img img {
+  max-width: 100%; /* ทำให้รูปภาพไม่เกินขนาด container */
+  height: auto;
+  display: block; /* สำคัญ: เพื่อให้ margin: auto ทำงาน */
+  margin: 0 auto; /* จัดกึ่งกลางรูปภาพใน container */
+}
+}
+
+.product-detail-container {
+display: grid;
+grid-template-columns: 1fr 1fr; /* แบ่งเป็น 2 คอลัมน์เท่ากัน */
+gap: 20px; /* ระยะห่างระหว่างคอลัมน์ */
+padding: 20px;
+font-family: sans-serif;
+}
+
+.product-detail-info {
+display: flex;
+flex-direction: column;
+justify-content: center; /* จัดเนื้อหาให้อยู่กึ่งกลางแนวตั้ง */
+}
+
+.product-title {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.product-subtitle {
+font-size: 1rem;
+color: #555;
+}
+
+.contact-info {
+margin-bottom: 20px;
+}
+
+.contact-item {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.contact-item i {
+margin-right: 10px;
+color: #007bff; /* สีไอคอน */
+width: 20px;
+text-align: center;
+}
+
+.contact-buttons {
+display: flex;
+flex-wrap: wrap; /* ให้ปุ่มขึ้นบรรทัดใหม่เมื่อพื้นที่ไม่พอ */
+gap: 10px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+.btn {
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+color: white;
+cursor: pointer;
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.btn-phone {
+background-color: #4CAF50; /* สีเขียว */
+}
+
+.btn-facebook {
+background-color: #1877F2; /* สีฟ้า Facebook */
+}
+
+.product-detail-image img {
+width: 500px;
+height: 500px;
+border-radius: 8px; /* ขอบมน */
+object-fit: cover; /* ครอบคลุมพื้นที่ */
+}
+
+/* ปรับสำหรับหน้าจอมือถือ (กว้างไม่เกิน 767px) */
+@media (max-width: 767px) {
+  .product-detail-container {
+    grid-template-columns: 1fr; /* เปลี่ยนเป็นคอลัมน์เดียว */
+  }
+
+  .product-detail-image {
+    order: -1; /* ให้รูปภาพอยู่ด้านบน */
+  }
+
+  .product-detail-image img {
+    width: 100%; /* รูปภาพเต็มความกว้าง */
+    height: auto;
+  }
+
+  .product-title {
+    font-size: 1.2rem; /* ลดขนาดหัวเรื่อง */
+  }
+
+  .contact-buttons {
+    flex-direction: column; /* เรียงปุ่มแนวตั้ง */
+    align-items: center; /* จัดปุ่มกึ่งกลาง */
+  }
+
+  .btn {
+    width: 100%; /* ปุ่มเต็มความกว้าง */
+    margin-bottom: 10px; /* ระยะห่างระหว่างปุ่ม */
+  }
+}
+
+.btn-contact-us .btn {
+  background-color: black;
+  color: white;
+  border: 2px solid black; /* เพิ่มขอบสีดำ */
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn-contact-us .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-view-works {
+  background-color: black;
+  color: white;
+  border: 2px solid black; /* เพิ่มขอบสีดำ */
+}
+
+.btn-view-works:hover {
+  background-color: white;
+  color: black;
+}
+
+.header-product button {
+  background-color: black; /* เปลี่ยนเป็นสีดำ */
+  color: white;
+  border: 2px solid black; /* เพิ่มขอบสีดำ */
+}
+
+.header-product button:hover {
+  background-color: white; /* เปลี่ยนเป็นสีขาวเมื่อ hover */
+  color: black;
+}
+
+.card .btn-primary {
+  background-color: black;
+  color: white;
+  border: 2px solid black; /* เพิ่มขอบสีดำ */
+}
+
+.card .btn-primary:hover {
+  background-color: white;
+  color: black;
+}
+
+.product-slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 1200px; /* ปรับขนาดตามต้องการ */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4; /* สีพื้นหลัง */
+}
+
+.product-container {
+  display: flex;
+  overflow-x: auto; /* ทำให้เลื่อนได้ในแนวนอน */
+  gap: 20px; /* ระยะห่างระหว่างสินค้า */
+  padding: 10px 0;
+}
+
+.product-card {
+  flex: 0 0 auto; /* ไม่ให้ขยายและหดตัว, ขนาดอัตโนมัติตามเนื้อหา */
+  width: 400px; /* ปรับขนาดการ์ดสินค้า */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover; 
+  margin-bottom: 10px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.slider-button:hover {
+  opacity: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    width: 100%; /* ยืนยันความกว้างเต็ม */
+    flex: 0 0 100%; /* ยืนยัน flex basis */
+  }
+}
+/* ปรับแต่งเพิ่มเติมตามความต้องการ เช่น ขนาดตัวอักษร สี ฯลฯ */
